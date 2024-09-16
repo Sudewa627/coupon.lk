@@ -1,0 +1,548 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*logo & nagivation bar*/
+
+#top{
+    display: flex;
+    background-color: black;
+    height: 130px;
+    padding-top: 10px;
+
+
+}
+    
+
+    
+
+
+
+#top img {
+    width: 110px;      
+    height: 110px;    
+    margin-left: 32px;
+
+}
+
+#top h3{
+    margin-left: 15px;
+    font-size: 27px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bolder;
+    margin-top: 45px;
+    color: rgb(237, 206, 54);
+}
+
+#top ul{
+    list-style: none;
+    display: flex;
+    margin-left: 370px;
+    margin-top: 25px;
+    width: 800px;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    
+}
+
+#top ul li{
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 23px;
+    font-size: 20px;
+    color: white;
+}
+
+#top ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+#top ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(239, 216, 48);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+    
+    
+}
+
+
+
+#top ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+/* Slider */
+
+
+
+#sld{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+}
+
+
+.slider{
+   
+    height: 506px;
+    width: 900px;
+    background-image: url(sources/1.png);
+    margin-top: 30px;
+    margin-left: 80px;
+    background-repeat: no-repeat;
+    animation-name: myani;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes myani{
+    0%  {background-image: url(sources/1.png);}
+    35% {background-image: url(sources/2.jpg);}
+    75% {background-image: url(sources/3.jpg);}
+}
+
+
+.slider2{
+   
+    height: 200px;
+    width: 300px;
+    background-image: url(sources/Picture1.png);
+    margin-top: 120px;
+    margin-left: 140px;
+    background-repeat: no-repeat;
+    animation-name: myani1;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myani1{
+    0%  {background-image: url(sources/Picture1.png);}
+    35% {background-image: url(sources/Picture2.png);}
+    75% {background-image: url(sources/Picture3.png);}
+}
+
+
+
+#sld h1{
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+    padding: 20px;
+}
+
+.green-button {
+    font-size: 100px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    height: 50px;
+    margin-left: 180px;
+    margin-top: -40px;
+}
+
+.green-button:hover {
+    background-color: darkgreen;
+}
+
+
+
+/* intro sentence*/
+
+#intro{
+margin-top: 50px;
+}
+
+#intro h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: arial;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+
+/*searchbar*/
+
+#searchbar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form{
+    background: white;
+    width: 900px;
+    height: 45px;
+    display: flex;
+}
+
+form input{
+    flex: 1;
+    border: none;
+    font-size: 15px;
+    background-color: #dddddd;
+    padding: 0px 20px;
+
+}
+
+form button{
+    background: rgb(0, 0, 0);
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.fa-search{
+    padding: 15px;
+   
+}
+
+
+
+
+/* popular events*/
+
+.popularevents h1{
+    font-size: 40px;
+    margin-left: 45px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.gallery img{
+    width: 30%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+/*categories*/
+
+.category{
+    margin-top: 50px;
+}
+
+.category h1{
+    font-size: 40px;
+    margin-left: 45px;
+
+}
+
+.categories{
+    display: flex;
+    width: 30%;
+    
+}
+
+.categories h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding: 27px 130px;
+    background-color: rgb(6, 152, 6);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.categories h1:hover{
+    background-color: darkgreen;
+
+}
+
+#cate1{
+    margin-left: 70px;
+
+}
+
+#cate2{
+    margin-left: 35px;
+   
+}
+
+#cate3{
+    margin-left: 15px;
+}
+
+
+
+
+
+/*paragraph*/
+
+.para{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.para h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/*footer*/
+
+.footer{
+    margin-top: 60px;
+    height: 355px;
+    background-color: rgb(0, 0, 0);
+}
+
+.footeritem{
+    display: flex;
+    padding-top: 40px;
+    
+}
+
+.footeritem h3{
+    font-family: sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+
+}
+
+.about{
+    margin-left: 110px;
+}
+
+.faq{
+    margin-left: 250px;
+}
+
+.follow{
+    margin-left: 220px;
+}
+
+.questions{
+    margin-left: 180px;
+}
+
+#social img{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.endlogo{
+    display: flex;
+    margin-left: 1250px;
+    margin-top: 40px;
+}
+
+.endlogo img{
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.endlogo h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 23px;
+    margin-top: 42px;
+    margin-left: 10px;
+    color: rgb(237, 206, 54);
+}
+
+.footerend{
+    text-align: center;
+}
+
+.footerend h4{
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*signin page*/
+
+/*signin*/
+
+.formback{
+    background-color: #ffffff;
+    margin-top: 0;
+    height: 400px;
+}
+
+.form {
+    text-align: center;
+    width: 430px; 
+    height: 420px;
+    background-color: black;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 30px;
+ 
+}
+
+.form h1 {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+
+}
+
+.form input {
+    margin-top: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 340px; 
+   
+}
+
+.form button {
+    margin-top: 20px;
+    padding: 10px 60px;
+    font-size: 16px;
+    background-color: rgb(5, 158, 5);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #146024;
+}
+
+.form p{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 360px;
+}
+
+
+
+
+
+/*signup page*/
+
+/*signup*/
+
+
+.formback1{
+    background-color: #ffffff;
+    margin-top: 0;
+    height: 400px;
+}
+
+.form1 {
+    text-align: center;
+    width: 430px; 
+    height: 430px;
+    background-color: black;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 30px;
+ 
+}
+
+.form1 h1{
+    text-align: center;
+    color: white;
+    margin-top: 0;
+
+}
+
+
+.form1 input {
+    margin-top: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 340px; 
+   
+}
+
+.form1 button {
+    margin-top: 20px;
+    padding: 10px 60px;
+    font-size: 16px;
+    background-color: rgb(5, 158, 5);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form1 button:hover {
+    background-color: #146024;
+}
+
+.form1 p{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 360px;
+}
+
+
+
+
+
+
+
